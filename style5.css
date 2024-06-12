@@ -1,0 +1,75 @@
+body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            flex: 1;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+            background: linear-gradient(90deg, #2c2c2c, #4f4f4f);
+            color: white;
+        }
+        .footer .left, .footer .center, .footer .right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer .center {
+            flex: 1;
+            text-align: center;
+        }
+        .footer .social-links a {
+            margin: 0 10px;
+            color: white;
+        }
+        .footer .contact-info {
+            margin: 10px 0;
+        }
+        .footer .contact-info img {
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        .footer .logo {
+            width: 225px;
+        }
+
+        .form-inscription-container {
+                           display: flex;
+                           justify-content: center;
+                           align-items: center;
+
+        }
+
+        .form-inscription {
+                           background: white;
+                           padding: 20px;
+                           border-radius: 10px;
+                           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                           background: linear-gradient(to bottom right, rgb( 224 , 224 , 224), rgb( 176 , 176 , 176));
+        }
+
+        @media (max-width: 576px) {
+            .footer {
+                flex-direction: column;
+                align-items: center;
+            }
+            .footer .left, .footer .center, .footer .right {
+                margin: 10px 0;
+            }
+            .schedule th, .schedule td {
+                padding: 5px;
+                font-size: 0.8em;
+            }
+            .schedule caption {
+                font-size: 1em;
+            }
+        }
+
+
